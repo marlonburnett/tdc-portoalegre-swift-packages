@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zby-I6-c7g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="BYZ-38-t0r" customClass="SearchViewController" customModule="TheDevConf2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5O0-Md-ZFp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5O0-Md-ZFp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4S4-gM-JvG"/>
+                            <constraint firstAttribute="bottom" secondItem="5O0-Md-ZFp" secondAttribute="bottom" id="CxO-QH-POs"/>
+                            <constraint firstItem="5O0-Md-ZFp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jBS-6y-rNm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5O0-Md-ZFp" secondAttribute="trailing" id="rEL-dZ-yd5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qFL-uV-eUm"/>
+                    <connections>
+                        <outlet property="tableView" destination="5O0-Md-ZFp" id="2Jp-VT-iP6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559" y="127"/>
+        </scene>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="CwJ-w0-av1">
+            <objects>
+                <viewController id="Zby-I6-c7g" customClass="SplashScreenViewController" customModule="TheDevConf2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VFh-lJ-BkD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ted" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-GX-Pdb">
+                                <rect key="frame" x="16" y="377" width="382" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="Qvq-L9-Ffj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zA6-Vl-3TW">
+                                <rect key="frame" x="102" y="527" width="210" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDEAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgh-ai-npu">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORTH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ms-tr-CMt">
+                                        <rect key="frame" x="48.5" y="0.0" width="61" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPREADING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNt-nN-tdh">
+                                        <rect key="frame" x="109.5" y="0.0" width="100.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*disclaimer: aplicativo não oficial, desenvolvido para fins de demonstração de conceito em uma Tech Talk*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZk-IV-gfT">
+                                <rect key="frame" x="16" y="788" width="382" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ToW-cU-1vL" firstAttribute="bottom" secondItem="UZk-IV-gfT" secondAttribute="bottom" constant="40" id="8G9-KJ-jHE"/>
+                            <constraint firstItem="zA6-Vl-3TW" firstAttribute="top" secondItem="GDJ-GX-Pdb" secondAttribute="bottom" constant="8" id="HRv-2Z-wqI"/>
+                            <constraint firstItem="UZk-IV-gfT" firstAttribute="leading" secondItem="VFh-lJ-BkD" secondAttribute="leading" constant="16" id="PUU-oo-zEM"/>
+                            <constraint firstItem="GDJ-GX-Pdb" firstAttribute="leading" secondItem="ToW-cU-1vL" secondAttribute="leading" constant="16" id="hKA-jb-aya"/>
+                            <constraint firstItem="ToW-cU-1vL" firstAttribute="trailing" secondItem="GDJ-GX-Pdb" secondAttribute="trailing" constant="16" id="mEi-ke-BaI"/>
+                            <constraint firstItem="ToW-cU-1vL" firstAttribute="trailing" secondItem="UZk-IV-gfT" secondAttribute="trailing" constant="16" id="pTc-N0-iaf"/>
+                            <constraint firstItem="GDJ-GX-Pdb" firstAttribute="centerY" secondItem="VFh-lJ-BkD" secondAttribute="centerY" id="pnG-R2-0Iq"/>
+                            <constraint firstItem="zA6-Vl-3TW" firstAttribute="centerX" secondItem="VFh-lJ-BkD" secondAttribute="centerX" id="sg7-km-3UY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ToW-cU-1vL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGT-88-3Jz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1388" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ted" width="1280" height="470"/>
+    </resources>
+</document>
