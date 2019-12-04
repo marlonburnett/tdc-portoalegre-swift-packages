@@ -1,5 +1,5 @@
-# tdc-portoalegre-swift-packages
-App apresentado na talk "Swift Packages no Xcode 11: Adeus Cocoapods ?"
+# Swift Packages no Xcode 11: Adeus Cocoapods ?
+Demonstração para Talk apresentada no TDC Porto Alegre 2019
 
 Para consumir a API do Youtube, é necessário obter uma chave de forma gratuita em [https://console.developers.google.com/apis/](https://console.developers.google.com/apis/)
 
